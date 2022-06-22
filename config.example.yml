@@ -1,0 +1,13 @@
+---
+base_url: https://my.api.domain.tld
+network_uri: /api/path/network-json-data
+devices_uri: /api/path/devices-json-path
+devices_remap: []
+#if your devices json data aint perfect, you can remap keys for csv cols
+
+request_headers:
+  - some-header: some-value
+  - x-key: abcdefg123456
+# If you want to store a  copy of both network.json and Shaper.csv each time they are updated, provide a path
+log_changes: False # or '/var/log/libreqos' etc
+

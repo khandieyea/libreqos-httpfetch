@@ -1,0 +1,16 @@
+---
+
+base_url: https://uc.luber.nz
+network_uri: /api/network/broadcast/libreqos/network
+devices_uri: /api/network/broadcast/libreqos/devices
+devices_remap: []
+#if your devices json data aint perfect, you can remap keys for csv cols
+
+request_headers:
+  some-header: some-value
+  x-key: abcdefg123456
+# If you want to store a  copy of both network.json and Shaper.csv each time they are updated, provide a path
+log_changes: /var/log/libreqos # etc
+
+#
+#final_output_dir: /where/am/i
